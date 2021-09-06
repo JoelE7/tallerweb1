@@ -1,0 +1,13 @@
+languaje: java
+script: mvn clean test
+notifications:
+  slack:
+    on_success: change
+  email:
+    recipients:
+      - joellasalas77@gmail.com
+      - jescobarlasalas@alumno.unlam.edu.ar
+    on_success: change 
+    on_failure: always 
+jdk:
+  - openjdk11
