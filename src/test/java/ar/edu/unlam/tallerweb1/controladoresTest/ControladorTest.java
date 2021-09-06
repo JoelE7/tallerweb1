@@ -12,8 +12,10 @@ import org.junit.Before;
 public class ControladorTest {
 
 	ControladorSencillo controlador;
+
 	ModelAndView mav;
 
+  
 	@Before
 	public void init() {
 		controlador = new ControladorSencillo();
