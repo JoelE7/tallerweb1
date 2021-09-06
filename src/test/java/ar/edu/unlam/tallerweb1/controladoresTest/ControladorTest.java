@@ -11,33 +11,32 @@ import org.junit.Before;
 
 public class ControladorTest {
 
-	
 	ControladorSencillo controlador;
+
+	ModelAndView mav;
+
   
-  ModelAndView mav;
-	
 	@Before
 	public void init() {
 		controlador = new ControladorSencillo();
 	}
-	
+
 	@Test
 	public void queCuandoHagaClickMeLleveAOtraVistaDistinta() {
-		
+
 		mav = whenHagoClickEnIrAPagina();
 		thenMeLlevaAUnaVistaDistinta();
-		
+
 	}
 
 	private ModelAndView whenHagoClickEnIrAPagina() {
 		return controlador.irAVista();
-		
+
 	}
 
 	private void thenMeLlevaAUnaVistaDistinta() {
 		assertThat(mav.getViewName()).isEqualTo("vistaNueva");
-		
+
 	}
-	
-	
+
 }
