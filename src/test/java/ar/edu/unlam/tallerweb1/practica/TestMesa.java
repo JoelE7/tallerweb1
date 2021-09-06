@@ -10,16 +10,16 @@ import static org.assertj.core.api.Assertions.*;
 public class TestMesa {
 
 	
-//	@Test
-//	public void queSePuedaCrearUnaMesaYseLeAsigneUnId() {
-//		
-//		//si existe 
-//		Mesa mesa = givenCreaUnaMesaConCapacidadPorDefecto();
-//		
-//		//entonces 
-//	//	System.out.println("mesa test1: " + mesa.getIdMesa());
-//		thenSeleAsignaUnIdAutomatico(mesa.getIdMesa());
-//	}
+	@Test
+	public void queSePuedaCrearUnaMesaYseLeAsigneUnId() {
+		
+		//si existe 
+		Mesa mesa = givenCreaUnaMesaConCapacidadPorDefecto();
+		
+		//entonces 
+	//	System.out.println("mesa test1: " + mesa.getIdMesa());
+		thenSeleAsignaUnIdAutomatico(mesa.getIdMesa());
+	}
 	
 	@Test
 	public void queCuandoUnaMesaSeCreeSeEncuentreDesocupada() {
