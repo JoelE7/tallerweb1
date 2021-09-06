@@ -15,7 +15,6 @@ public class ControladorTest {
 
 	ModelAndView mav;
 
-	Integer alla = 0;
 	@Before
 	public void init() {
 		controlador = new ControladorSencillo();
